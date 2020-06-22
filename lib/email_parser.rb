@@ -10,8 +10,10 @@
     end
     
     def parse
-     puts splitemail = emails.split.collect {|address| address.split(',')}
+     splitemail = emails.split.collect {|address| address.split(',')}
      finishedemail = splitemail.flatten.uniq
      finishedemail
+    
+   
       end
   end
